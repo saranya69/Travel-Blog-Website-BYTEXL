@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My Blog</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: pink;
+    color: #333;
+    padding: 20px;
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA5L3JtNTcyZGVzaWduLWEtcmVtaXgtMDUuanBn.jpg'); 
+}
+
+/* Header */
+header {
+    background-color:#585b50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Main Content */
+main {
+    flex: 3;
+    margin-right: 20px;
+}
+
+main article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+main article:target {
+    display: block;
+}
+
+main article#default {
+    display: block;
+}
+
+main article h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+main article .meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main article p {
+    margin-bottom: 15px;
+}
+
+main article .read-more {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main article .read-more:hover {
+    background-color: blue;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+}
+
+aside section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+aside section h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+aside section ul {
+    list-style: none;
+}
+
+aside section ul li {
+    margin-bottom: 10px;
+}
+
+aside section ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+aside section ul li a:hover {
+    color: grey;
+}
+
+/* Footer */
+footer {
+    background-color: #585b50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        margin-left: 0;
+    }
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Explore the world through vivid tales and captivating journeys!!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article id="default">
+                <h2>Travel Masthiiii!!!</h2>
+                <p class="meta">By SaranyaPabbineedi | August 18, 2024</p>
+                <img src="https://i.pinimg.com/736x/96/45/fd/9645fd38007de29f6d39bdb05a4d7d44.jpg" alt="Sample Blog Post Image" width="1000" height="100">
+                <p>"Embark on a journey to the hidden gems of the world, where adventure meets serenity. From the sun-kissed beaches of Bali to the cobblestone streets of Prague, each destination tells its own story. Discover vibrant cultures, tantalizing cuisines, and breathtaking landscapes that will leave you in awe. Whether you're a solo traveler or exploring with loved ones, the world is full of wonders waiting to be explored. Pack your bags and set off on your next unforgettable adventure!"</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post1">
+                <h2>Bustling Markets</h2>
+                <p class="meta">By Saranya | August 16, 2024</p>
+                <img src="https://cdn.openart.ai/stable_diffusion/22048ea6945bf247815b8c8f4f85c50bd1a325ec_2000x2000.webp" alt="Post 1 Image" width="1000">
+                <p>"Wander through the bustling markets of Marrakech, where the scent of spices fills the air and vibrant colors captivate your senses. From the Atlas Mountains to the Sahara Desert, Morocco offers a tapestry of experiences. Immerse yourself in the rich history, savor traditional tagine, and find solace in the tranquility of a riad. Adventure awaits in every corner of this enchanting land. Unveil the magic of Morocco, one step at a time."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post2">
+                <h2>Greek Isels</h2>
+                <p class="meta">By Saranya| August 17, 2024</p>
+                <img src="https://st.depositphotos.com/1813545/2432/i/450/depositphotos_24324677-sunset-on-the-beach-with-screw-ocean-wave.jpg" alt="Post 2 Image" width="1000">
+                <p>"Set sail along the crystal-clear waters of the Greek Isles, where ancient ruins and azure seas create a postcard-perfect escape. Discover the charm of Santorini’s white-washed buildings, bask in the beauty of Mykonos’s golden beaches, and indulge in the Mediterranean flavors of fresh seafood and olive oil. Each island offers a unique story and unforgettable views. Let Greece be your next sun-soaked getaway."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post3">
+                <h2>Rolling hills</h2>
+                <p class="meta">By Satya | August 18, 2024</p>
+                <img src="https://img.jakpost.net/c/2020/01/27/2020_01_27_85239_1580092894._large.jpg" alt="Post 3 Image">
+                <p>"Journey through the rolling hills of Tuscany, where vineyards stretch as far as the eye can see and medieval towns whisper tales of history. Savor the rich flavors of Italian wine and cuisine, explore the artistic treasures of Florence, and bask in the golden glow of the countryside. Tuscany offers a perfect blend of relaxation and exploration. Let the Italian countryside be your sanctuary of peace and pleasure."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="category1">
+                <h2>Category 1</h2>
+                <p class="meta">By Author Name | August 19, 2024</p>
+                <img src="https://via.placeholder.com/600x300" alt="Category 1 Image">
+                <p>This is the content for Category 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+
+            <article id="category2">
+                <h2>Category 2</h2>
+                <p class="meta">By Author Name | August 20, 2024</p>
+                <img src="https://via.placeholder.com/600x300" alt="Category 2 Image">
+                <p>This is the content for Category 2. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam...</p>
+            </article>
+
+            <article id="category3">
+                <h2>Category 3</h2>
+                <p class="meta">By Author Name | August 21, 2024</p>
+                <img src="https://via.placeholder.com/600x300" alt="Category 3 Image">
+                <p>This is the content for Category 3. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices...</p>
+            </article>
+        </main>
+
+        <aside>
+            <section>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#post1">Bustling Markets</</a></li>
+                    <li><a href="#post2">Greek Isels</a></li>
+                    <li><a href="#post3">Rolling hills</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#category1">Nature </a></li>
+                    <li><a href="#category2">Beaches</a></li>
+                    <li><a href="#category3">Mountains</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Contact through mail: saranyapabbineedi@gmail.com</p>
+        <p>Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
